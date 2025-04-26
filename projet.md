@@ -1,12 +1,3 @@
-# cl-notes
-Mes notes personnelles sur common lisp.
-
-
-## Table des matières
-
-* [Définir un nouveau projet](projet.md)
-
-
 ## asdf
 
 Équivalent d'un makefile. Doit être appelé nom-projet.asd Pour définir un système,
@@ -42,7 +33,14 @@ Doit être appelé package.lisp. Permet d'exposer l'API, de définir les dépend
 ```
 (defpackage #:nom-projet
   (:use #:cl) ;; importe les symboles de ces paquets
-  (:export #:fonction1
+  (:export #:fonction1 ;; symboles visibles de l'extérieur
 	   #:fonction2))
 
+```
+
+Utiliser ensuite, à l'intérieur des fichiers du package,
+
+
+```
+(in-package #:nom-projet)
 ```
