@@ -7,3 +7,8 @@ Mes notes personnelles sur common lisp.
 * [Paredit Cheatsheet](paredit.pdf)
 * [Définir un nouveau projet](projet.md)
 * [Gestion des erreurs](erreurs.md)
+
+
+## Raccourcis
+
+* `C-c C-d h` look-up dans l'hyperspec.
