@@ -17,3 +17,4 @@ Mes notes personnelles sur common lisp.
 ## Ressources
 
 * [common-lisp-libraries](https://common-lisp-libraries.readthedocs.io/)
+* [cl-cookbook](https://lispcookbook.github.io/)
