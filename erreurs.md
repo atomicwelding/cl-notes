@@ -2,6 +2,7 @@
 
 On va prendre l'exemple de la division, facile à comprendre. On retrouve les exemples complets dans le [cl-cookbook](https://lispcookbook.github.io/cl-cookbook/error_handling.html#restarts-interactive-choices-in-the-debugger).
 
+Une erreur est un type de condition en common lisp.
 
 
 ## Throw une erreur
@@ -57,5 +58,35 @@ On va prendre l'exemple de la division, facile à comprendre. On retrouve les ex
 ```
 
 
+## Créer une condition
 
+
+
+```
+(define-condition my-divide-by ()
+  ((valeur :initarg :valeur
+	   :reader valeur))
+  (:report (lambda (condition stream)
+	     (format stream "Division by ~a not allowed" (valeur condition))))
+  (:documentation "Condition to say we can't divide by a number"))
+
+
+(make-condition 'my-divide-by :valeur 0)
+```
+
+
+## handler-bind
+
+```
+(defun divide (x y)
+  (handler-bind
+      ((division-by-zero
+	 (lambda (condition)
+	   (format t "Division par 0 détectée~%")
+	   (invoke-restart 'my-continue))))
+    (restart-case (/ x y)
+      (my-continue ()
+	:report "Continuer malgré l'erreur"
+	42))))
+```
 
