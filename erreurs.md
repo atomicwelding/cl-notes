@@ -90,3 +90,13 @@ Une erreur est un type de condition en common lisp.
 	42))))
 ```
 
+
+
+## unwind-protect
+
+```
+(defun divide (x y)
+  (unwind-protect
+       (/ x y)
+    (format t "Always evaluated, no matter what happens before")))
+```
