@@ -12,3 +12,8 @@ Mes notes personnelles sur common lisp.
 ## Raccourcis
 
 * `C-c C-d h` look-up dans l'hyperspec.
+
+
+## Ressources
+
+* [common-lisp-libraries](https://common-lisp-libraries.readthedocs.io/)
