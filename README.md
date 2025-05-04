@@ -11,6 +11,8 @@ Mes notes personnelles sur common lisp.
 
 ## Raccourcis
 
+* `C-c <RET>` pour macroexpand dans un buffer séparé.
+* `C-j` pour sauter une ligne (marche dans le REPL notamment).
 * `C-c C-d h` look-up dans l'hyperspec.
 
 
