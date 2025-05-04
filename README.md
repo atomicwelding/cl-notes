@@ -16,6 +16,14 @@ Mes notes personnelles sur common lisp.
 * `C-c C-d h` look-up dans l'hyperspec.
 
 
+## Bibliothèques
+
+* cl-who pour générer du html
+* parenscript pour générer du javascript
+* cl-opengl comme wrapper opengl
+* cl-glu/cl-glut
+* cepl
+
 ## Ressources
 
 * [common-lisp-libraries](https://common-lisp-libraries.readthedocs.io/)
