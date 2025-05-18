@@ -8,6 +8,10 @@ Mes notes personnelles sur common lisp.
 * [Définir un nouveau projet](projet.md)
 * [Gestion des erreurs](erreurs.md)
 
+## Définitions
+
+* `:thing` est un symbole placé dans le package `KEYWORD`.
+* `#:thing` est un symbole "uninterned", il n'est placé dans aucun package et à chaque fois qu'on l'évalue, un nouveau symbole est créé.
 
 ## Raccourcis
 
