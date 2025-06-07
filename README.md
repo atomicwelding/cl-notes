@@ -16,13 +16,16 @@ Mes notes personnelles sur common lisp.
 ## Raccourcis
 
 * `C-c <RET>` pour macroexpand dans un buffer séparé.
-* `C-j` pour sauter une ligne (marche dans le REPL notamment).
+* `C-j`, `M-j` pour sauter une ligne (marche dans le REPL notamment).
 * `C-c C-d h` look-up dans l'hyperspec.
+* `C-x w h` pour highlight un mot. Utiliser unhighlight pour l'enlever.
 
 
 ## Bibliothèques
 
 * cl-who pour générer du html
+* cl-pprce pour les regexp
+* cl-str pour la manipulation de string (sinon voir uiop)
 * parenscript pour générer du javascript
 * cl-opengl comme wrapper opengl
 * cl-glu/cl-glut
