@@ -15,6 +15,12 @@ Mes notes personnelles sur common lisp.
 
 ## Raccourcis
 
+* `M-x count-words` pour compter le nb de lignes/caractères
+* `M-g g` pour sauter à une ligne
+* `C-/` pour undo
+* `C-x <SPACE>` demarrer une selection rectangle
+* `C-x r d` delete un rectangle
+* `C-x r t` pour écrire sur plusieurs lignes
 * `C-c <RET>` pour macroexpand dans un buffer séparé.
 * `C-j`, `M-j` pour sauter une ligne (marche dans le REPL notamment).
 * `C-c C-d h` look-up dans l'hyperspec.
