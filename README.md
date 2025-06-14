@@ -29,6 +29,7 @@ Mes notes personnelles sur common lisp.
 
 ## Bibliothèques
 
+* mcclim pour la gui
 * cl-who pour générer du html
 * cl-pprce pour les regexp
 * cl-str pour la manipulation de string (sinon voir uiop)
